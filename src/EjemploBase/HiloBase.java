@@ -5,6 +5,7 @@
  */
 package EjemploBase;
 
+import Pedro.*;
 import ch.aplu.turtle.Turtle;
 
 /**
@@ -21,6 +22,26 @@ public class HiloBase extends Thread {
 
     @Override
     public void run() {
-        this.tortuga.forward(100);
+        this.tortuga.setPos(70,0);
+        this.tortuga.back(10);
+        this.tortuga.right(90);
+        this.tortuga.forward(40);
+        this.tortuga.left(90);
+        this.tortuga.forward(110);
+        this.tortuga.left(90);
+        this.tortuga.forward(40);
+        this.tortuga.left(90);
+        this.tortuga.forward(20);
+        this.tortuga.back(20);
+        this.tortuga.right(90);
+        this.tortuga.forward(5);
+        this.tortuga.right(150);
+        this.tortuga.forward(30);
+        this.tortuga.right(60);
+        this.tortuga.forward(30);
+        this.tortuga.right(150);
+        this.tortuga.forward(20);
+        this.tortuga.hideTurtle();
+        
     }
 }
